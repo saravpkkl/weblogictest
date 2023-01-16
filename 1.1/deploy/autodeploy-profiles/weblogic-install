@@ -1,0 +1,4 @@
+APPNAME=weblogic-rest
+VERSIONABLE=N
+VERSION=1.1
+CONTEXT_ROOT=weblogic-rest/1
