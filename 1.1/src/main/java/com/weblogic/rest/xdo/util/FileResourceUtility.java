@@ -33,22 +33,6 @@ public final class FileResourceUtility {
 		 
 	}
 	
-	public static String getResourceAsString(String resource) throws WeblogicFileAccessException{
-		StringBuilder sb = new StringBuilder();		
-		InputStream stream = getResourceAsInputStream(resource);
-		
-		if (stream == null){
-			logger.fatal("Cannot load resource: " + resource);
-			throw new WeblogicFileAccessException("Cannot load resource: " + resource);
-		}
-		
-		Scanner scanner = new Scanner(stream);
-		
-		while (scanner.hasNextLine()){
-			sb.append(scanner.nextLine() + "\n");
-		}
-		
-		return sb.substring(0,(sb.length() == 0)?0:(sb.length() - 1));
-	}
+	 
 	
 }
