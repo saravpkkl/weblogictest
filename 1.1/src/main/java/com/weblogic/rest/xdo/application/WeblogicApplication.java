@@ -15,8 +15,7 @@ public class WeblogicApplication extends Application {
 	public Set<Class<?>> getClasses(){
 		Set<Class<?>> classes = new HashSet<Class<?>>();
 		
-		classes.add(ReportGeneratorRest.class);
-		classes.add(XslGeneratorRest.class);
+		classes.add(ReportGeneratorRest.class);		
 		classes.add(WeblogicExceptionMapper.class);
 		
 		return classes;
